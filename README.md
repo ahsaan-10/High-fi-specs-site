@@ -1,26 +1,38 @@
-# Editorial Punk — portfolio site
+# Editorial Portfolio Website
 
-Static site. No build step: `index.html` + `support.js` + `assets/`.
+**A static portfolio export presenting services, project imagery, presentation decks, and before-and-after design work.**
 
-## Push to GitHub
+## What to look at
+
+- Editorial page layout and typography.
+- Project and comparison imagery stored in `assets/`.
+- Presentation PDFs accompanying project examples.
+- Service, FAQ, and contact sections.
+- A self-contained static export with its supporting browser runtime.
+
+This is a frontend presentation example. Portfolio text and any outcome claims need their own evidence; the site source alone does not establish client results.
+
+## Preview locally
+
 ```bash
-cd deploy-folder
-git init
-git add .
-git commit -m "Portfolio site"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
-git push -u origin main
+git clone https://github.com/ahsaan-10/High-fi-specs-site.git
+cd High-fi-specs-site
+python -m http.server 8080
 ```
-(Or on github.com: New repository -> "uploading an existing file" -> drag this folder's contents in.)
 
-## Go live with GitHub Pages
-Repo -> Settings -> Pages -> Source: "Deploy from a branch" -> Branch: `main`, folder `/ (root)` -> Save.
-Site appears at `https://YOUR-USERNAME.github.io/YOUR-REPO/` in ~1 minute.
+Open `http://localhost:8080`. Serve the directory over HTTP so the supporting runtime can fetch resources as intended. No npm build step is included in this export.
 
-## Custom domain
-Settings -> Pages -> Custom domain -> enter your domain, then add a CNAME record at your DNS pointing to `YOUR-USERNAME.github.io`.
+## Repository map
 
-## Before going live
-- Replace the `#` hrefs on the two "book a call" buttons with your booking link (Calendly etc).
-- Update the og:image URL in `index.html` to your live URL if sharing previews look wrong.
+```text
+index.html   Exported page, content, and styling
+support.js   Supporting browser runtime
+assets/      Project images, portraits, favicons, and presentation PDFs
+.nojekyll    Static hosting marker
+```
+
+## Hosting
+
+Publish the repository root with a static host, or enable GitHub Pages from `main` and the root folder. The homepage URL previously configured on this repository returned HTTP 404 during the 5 October 2026 audit, so a hosted demo is not advertised here yet.
+
+Before sharing a deployment, check contact and booking links, social-preview metadata, and assets on both mobile and desktop.
