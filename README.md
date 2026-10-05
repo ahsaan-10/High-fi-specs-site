@@ -2,6 +2,8 @@
 
 **A static portfolio export presenting services, project imagery, presentation decks, and before-and-after design work.**
 
+[View the website](https://ahsaanstudio.vercel.app)
+
 ## What to look at
 
 - Editorial page layout and typography.
@@ -33,6 +35,6 @@ assets/      Project images, portraits, favicons, and presentation PDFs
 
 ## Hosting
 
-Publish the repository root with a static host, or enable GitHub Pages from `main` and the root folder. The homepage URL previously configured on this repository returned HTTP 404 during the 5 October 2026 audit, so a hosted demo is not advertised here yet.
+Publish the repository root with a static host, or enable GitHub Pages from `main` and the root folder. The current demo is [Ahsaan Studio](https://ahsaanstudio.vercel.app). Its HTML response and matching page title were checked on 6 October 2026; browser interactions were not tested as part of this documentation update.
 
 Before sharing a deployment, check contact and booking links, social-preview metadata, and assets on both mobile and desktop.
